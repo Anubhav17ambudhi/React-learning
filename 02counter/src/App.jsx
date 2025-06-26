@@ -13,6 +13,8 @@ function App() {
   // useState([]) // this can be given in the default value of the variable
 
   let [counter,setCounter] = useState(15);//second is usually the setvariable
+  //useState sends updates in batches so it we try to update counter more than once
+  // in the function
 
   // let counter = 15;
 
@@ -26,7 +28,12 @@ function App() {
 
   const removeValue = () => {
     if(counter >= 1)
-      setCounter(counter-1);
+      // setCounter(counter-1);
+      // setCounter(counter-1);this doesn't work as expected
+      setCounter((prevCounter) => prevCounter+1)//just to keep track for the previous state
+      //used in the function setCounter
+      // setCounter is actually accepts a callback
+      setCounter((prevCounter) => prevCounter+1)
   }
 
   return (
