@@ -19,12 +19,14 @@ function App() {
   const addValue = () => {
     console.log("clicked",counter);
     //counter = counter + 1; this was old method to update the variable
+    if(counter < 20)
     counter = counter + 1;
     setCounter(counter)
   }
 
   const removeValue = () => {
-    setCounter(counter-1);
+    if(counter >= 1)
+      setCounter(counter-1);
   }
 
   return (
