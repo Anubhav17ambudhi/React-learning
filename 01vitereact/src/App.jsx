@@ -1,11 +1,15 @@
-
+import Chai from "./chai.jsx"
 
 function App() {
   return (
-    <h1>
-      Hello duniya
-    </h1>
+    <>
+      <Chai/>
+    </>
   )
 }
+
+//actually jsx wants this to return only single element
+//so therefore we have <></> fragments in this
+// we use this fragment to wrap multiple elements
 
 export default App
