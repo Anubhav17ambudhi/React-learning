@@ -29,7 +29,7 @@ const ReactElement = React.createElement(
   'a',
   {href:'https://google.com',target: '_blank'},
   'click me to visit google',
-  anotherUser//this will directly be inject as a evaluated expression
+  Myapp//this will directly be inject as a evaluated expression
 )
 
 ReactDOM.createRoot(document.getElementById('root')).

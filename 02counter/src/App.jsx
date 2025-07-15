@@ -27,14 +27,15 @@ function App() {
   }
 
   const removeValue = () => {
-    if(counter >= 1)
+    if(counter >= 1){
       // setCounter(counter-1);
       // setCounter(counter-1);this doesn't work as expected
-      setCounter((prevCounter) => prevCounter+1)//just to keep track for the previous state
+      setCounter((prevCounter) => prevCounter-1)//just to keep track for the previous state
       //used in the function setCounter
       // setCounter is actually accepts a callback
-      setCounter((prevCounter) => prevCounter+1)
-  }
+      setCounter((prevCounter) => prevCounter-1)
+    }
+}
 
   return (
     <>
