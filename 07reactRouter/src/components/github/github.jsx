@@ -2,7 +2,7 @@ import React, { useEffect,useState } from "react";
 import { useLoaderData } from "react-router-dom";
 
 function Github(){
-  // const [data,setData] = useState([])
+  // const [data,setData]  = useState([])
   // useEffect(() => {
   //   fetch('https://api.github.com/users/Anubhav17ambudhi')
   //   .then(response => response.json)
